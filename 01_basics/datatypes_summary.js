@@ -30,5 +30,32 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof myFunction);
-console.log(typeof anotherId);
+// console.log(typeof myFunction);
+// console.log(typeof anotherId);
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename= "hiteshchoudharydotcom"
+
+let anothername= myYoutubename
+anothername="chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+// It will just update the value in which it is told to 
+
+let userOne={
+    email:"user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+// it will also update value in the userOne also , that is , heap
+
+userTwo.email="hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
