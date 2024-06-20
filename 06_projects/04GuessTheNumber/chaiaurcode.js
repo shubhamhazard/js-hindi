@@ -59,7 +59,7 @@ function checkGuess(guess) {
 function displayGuess(guess) {
     userInput.value=''
     guess.innerHTML += `${guess}`
-    newGuess++;
+    numGuess++;
     remaining.innerHTML = `${11 - numGuess}`
 }
 
