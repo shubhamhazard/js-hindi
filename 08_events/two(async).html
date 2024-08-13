@@ -1,32 +1,41 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- </head>
- <body>
+</head>
+
+<body>
     <h1>Chai aur code</h1>
     <button id="stop">stop</button>
- </body>
- <script>
-    const sayHITESH = function(){
+</body>
+<script>
+    const sayHITESH = function () {
         console.log("Hitesh")
     }
 
-    
-    const changeText = function(){
-        document.querySelector('h1').innerHTML="best JS series"
-    }
-    
-    const changeMe = setTimeout(changeText, 2000)
-    
-        // clearTimeout(changeMe)
 
-        document.querySelector('#stop').addEventListener('click', function(){
-            clearTimeout(changeMe)
-            console.log("STOPPED")
-        })
-    </script>
- </html>
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    // clearTimeout(changeMe)
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+
+        // setTimeout(function() {
+        //     console.log("Hitesh")
+        // }, 2000);
+        // Timeout means occur once after given preiod of time
+        // setinterval means occur again and again but after given interval of time
+</script>
+
+</html>
