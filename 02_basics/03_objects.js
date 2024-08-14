@@ -8,7 +8,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     "name": "Hitesh",
     "full name": "Hitesh Choudhary",
-    [mySym]: "mykeys1", // mySym will only be shown as a symbol when it is closed in a square bracket
+    [mySym]: "mykeys1", // mySym can only be seen as a symbol when it is closed in a square bracket
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
